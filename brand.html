@@ -6,93 +6,160 @@
         body{
             margin:0px;
             padding:0px;
-            background: white;
-            font-family:"Arial Black", Gadget, sans-serif;
+            background-color:white;
+            font-family:"Fixedsys", Gadget, sans-serif;
             font-weight:bold;
+        }   
+        .churros-image{
+            position: relative;
+            padding:0px 5% 0px 5%;
+            height:400px;
+            background-color: black;
+        }
+        .churros-image>img{
+            width:100%;
+            height:400px;
+            opacity: 0.7;
+        }
+        .churros-image div{
+            position:absolute;
+            right:8%;
+            bottom:-5%;
+            font-size:35px;
+            text-align: center;
+            color:#f3bf0c;
         }
         .menu{
             list-style: none;
-            height: 120px;
+            height: 60px;
             width: 100%;
             margin:0px;
-            background:#f3bf0c;
-            position:fixed;
+            padding:0px;
+            background:white;
+            position:absolute;
         }        
-        .menu > span{
-            float:left;
-            overflow:hidden;
-            font-size:25px;
-            color:black;            
-            text-decoration:none;
-        } 
-        .name {
-            position: relative;
-            top:35px;
-            width:8%;
-        }
-        .logo{
-            position: relative;
-            top:10px;
-            width:22%
-        }
-        span>img{
-            position:relative;
-            width:45px;
-            height:100px;
-        }
         .menu li{
-            top:10px;
+            top:2px;
             float:left;
-            width:200px;
+            width:15%;
             position:relative;
-            font-size:30px;
+            font-size:20px;
         }
         .menu ul{
             list-style: none;
             position: absolute;
             display: none;
-            background:#f3bf0c;   
+        }
+        .menu > li{
+            padding-top:10px;
+            text-align: center;
+        }
+        .menu > li > ul{
+            padding-top:0px;
+            padding-left:120px;
+        }
+        .menu ul > li {
+            text-align: center;
+            font-size:15px;
+            width:80px;
         }
         li>a {
             text-decoration: none;
-            color:black;     
+            color:black;
         }
         li>a:hover{
             text-decoration: underline;
         }
         .menu li:hover ul{
-            display: block;
             display: flex;
         }
-        .intro{
+        .lokochu-birth{
             padding-top:120px;
-            height:300px;
+            margin:0px;
         }
-        .intro>img{
-            width:100%;
-            height:400px;
+        .lokochu-birth img{
+            padding:0px 20%;
+            width:60%;
         }
+        .lokochu-birth h1{
+            text-align: center;
+            font-size: 50px;
+            font-family: Impact, Charcoal, sans-serif;
+            padding-bottom: 0px 20px;
+            text-decoration: underline;
+            font-weight: normal;
+        }
+        .lokochu-birth p{
+            font-size: 20px;
+            text-align: center;
+            font-family: Verdana, Geneva, sans-serif;
+        }
+        .lokochu-about{
+            padding-top:60px;
+            margin:0px;
+        }
+        .lokochu-about img{
+            padding:0px 20%;
+            width:60%;
+            opacity: 1;
+        }
+        .lokochu-about h1{
+            text-align: center;
+            font-size: 50px;
+            font-family: Impact, Charcoal, sans-serif;
+            padding-bottom: 0px 20px;
+            text-decoration: underline;
+            font-weight: normal;
+        }
+        .lokochu-about p{
+            font-size: 20px;
+            text-align: center;
+            font-family: Verdana, Geneva, sans-serif;
+        }
+
     </style>
 </head>
-<body>
-        <ul class="menu">
-                <span class="name"><a>LOKOCHU</a></span>
-                <span class="logo"><a href = "#"></a><img src="https://lsb8370.github.io/icon.png"></span>
-                    <li style="width:22%;margin-top:0px"> <a href = "#">INTRODUCE</a>
-                        <ul>
-                            <li><a href = "#">BRAND</a></li>
-                            <li><a href = "#">CHARACTER</a></li>
-                        </ul>
-                    </li>
-                    <li style="width:18%;margin-top:0px"><a href = "#"> MENU</a>
-                        <ul>
-                            <li><a href = "#">CHURROS</a></li>
-                            <li><a href = "#">SAUCE</a></li>
-                        </ul>
-                    </li>
-                    <li style="width:13%;margin-top:0px"><a href = "#"> STORE</a></li>
-                    <li style="width:15%;margin-top:0px"><a href = "#"> SNS</a></li>
-         </ul>
-         <div class="intro"><img src="introduce.jpg"></div>
+<body>    
+    <div class="churros-image">
+        <img src="intro.jpg">
+        <div class="caption">
+            <h1>
+                LOKOCHURROS
+            </h1>
+        </div>
+    </div>
+    <ul class="menu">
+        <li><a href="index.html" target="_self">HOME</a></li>
+        <li> <a href = "#">INTRODUCE</a>
+            <ul>
+                <li><a href = "brand.html" target="_self">BRAND</a></li>
+                <li><a href = "#">CHARACTER</a></li>
+            </ul>
+        </li>
+        <li><a href = "#"> MENU</a>
+            <ul>
+                <li><a href = "#">CHURROS</a></li>
+                <li><a href = "#">SAUCE</a></li>
+            </ul>
+        </li>
+        <li><a href = "#"> STORE</a></li>
+        <li><a href = "#"> SNS</a></li>
+    </ul>
+    <div class="lokochu-birth">
+        <img src="highschool.png" alt="school image">
+        <h1>Birth LOKOCHURROS</h1>
+        <p>창업자 2명 모두 고3 생활을 하던 중 쇼미더머니를 보게 되었다.</p>
+        <p>그러던 중 힙합 레이블 AOMG의 LOCO라는 래퍼에게 빠지게 되었다.</p>
+        <P>그리하여 훗날 그의 팬클럽 이름을 본떠 츄러스가게를 열기로 하는데</P>
+        <P>이렇게 탄생한것이 LOKOCHU이다.</P>
+    </div>
+    <div class="lokochu-about">
+        <img src="about_lokochurros.jpg" alt="churros image">
+        <h1>About LOKOCHURROS</h1>
+        <p>저희 LOKOCHURROS는 최상의 츄러스를 위해</p>
+        <p>항상 최선을 다해 반죽하고 튀겨냅니다.</p>
+        <p>AOMG멤버들이 모두 방문하는 순간까지 </p>
+        <p>저희 LOKOCHURROS의 메뉴개발은 계속될 것입니다.</p>
+    </div>
 </body>
 </html>
