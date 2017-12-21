@@ -32,9 +32,9 @@
         .menu{
             list-style: none;
             height: 60px;
-            width: 100%;
+            width: 80%;
             margin:0px;
-            padding:0px;
+            padding-left:20%;
             background:white;
             position:absolute;
         }        
@@ -56,7 +56,7 @@
         }
         .menu > li > ul{
             padding-top:0px;
-            padding-left:120px;
+            padding-left:50px;
         }
         .menu ul > li {
             text-align: center;
@@ -72,6 +72,21 @@
         }
         .menu li:hover ul{
             display: flex;
+        }
+        .top-button{
+                position: fixed;
+                bottom:160px;
+                right:50px;
+                color:white;
+                background-color: #707070;
+        }
+        .facebook-button{
+             padding-top:10px;
+             text-align: left;
+        }
+        .facebook-button img{
+            width:30px;
+            height:30px;
         }
         .lokochu-birth{
             padding-top:120px;
@@ -95,7 +110,7 @@
             font-family: Verdana, Geneva, sans-serif;
         }
         .lokochu-about{
-            padding-top:60px;
+            padding:60px 0px 60px 0px;
             margin:0px;
         }
         .lokochu-about img{
@@ -116,6 +131,20 @@
             text-align: center;
             font-family: Verdana, Geneva, sans-serif;
         }
+        .info{
+            position:static;
+            padding:20px 0px;
+            background:black;
+            margin:0px;
+            text-align: center;
+        }
+        .info p{
+            font-size:20px;
+            font-weight:bold;
+            color:white;
+            margin: 0px;
+            padding: 3px;
+        }
 
     </style>
 </head>
@@ -129,37 +158,40 @@
         </div>
     </div>
     <ul class="menu">
-        <li><a href="index.html" target="_self">HOME</a></li>
+        <li><a href="last.html" target="_self">HOME</a></li>
         <li> <a href = "#">INTRODUCTION</a>
             <ul>
                 <li><a href = "brand.html" target="_self">BRAND</a></li>
-                <li><a href = "#">CHARACTER</a></li>
+                <li><a href = "character.html" target="_self">CHARACTER</a></li>
             </ul>
         </li>
-        <li><a href = "#"> MENU</a>
-            <ul>
-                <li><a href = "#">CHURROS</a></li>
-                <li><a href = "#">SAUCE</a></li>
-            </ul>
-        </li>
-        <li><a href = "#"> STORE</a></li>
-        <li><a href = "#"> SNS</a></li>
+        <li><a href = "menu-churros.html"> MENU</a></li>
+        <li><a href = "store.html"> STORE</a></li>
+        <li><a href = "contents.html"> CONTENTS</a></li>
+        <div class="facebook-button"><a href="https://www.facebook.com/Lokochurros-383036305484511/"><img src="facebook.png"></a></div>
     </ul>
+    <div class="top-button" style="cursor: pointer;" onclick="window.scrollTo(0,0);">TOP</div>
+    
     <div class="lokochu-birth">
         <img src="highschool.png" alt="school image">
-        <h1>Birth LOKOCHURROS</h1>
-        <p>창업자 2명 모두 고3 생활을 하던 중 쇼미더머니를 보게 되었다.</p>
-        <p>그러던 중 힙합 레이블 AOMG의 LOCO라는 래퍼에게 빠지게 되었다.</p>
-        <P>그리하여 훗날 그의 팬클럽 이름을 본떠 츄러스가게를 열기로 하는데</P>
-        <P>이렇게 탄생한것이 LOKOCHU이다.</P>
+            <h1>Birth LOKOCHURROS</h1>
+            <p>창업자 2명 모두 고3 생활을 하던 중 쇼미더머니를 보게 되었다.</p>
+            <p>그러던 중 힙합 레이블 AOMG의 LOCO라는 래퍼에게 빠지게 되었다.</p>
+            <P>그리하여 훗날 그의 팬클럽 이름을 본떠 츄러스가게를 열기로 하는데</P>
+            <P>이렇게 탄생한것이 LOKOCHU이다.</P>
     </div>
     <div class="lokochu-about">
         <img src="about_lokochurros.jpg" alt="churros image">
-        <h1>About LOKOCHURROS</h1>
-        <p>저희 LOKOCHURROS는 최상의 츄러스를 위해</p>
-        <p>항상 최선을 다해 반죽하고 튀겨냅니다.</p>
-        <p>AOMG멤버들이 모두 방문하는 순간까지 </p>
-        <p>저희 LOKOCHURROS의 메뉴개발은 계속될 것입니다.</p>
+            <h1>About LOKOCHURROS</h1>
+            <p>저희 LOKOCHURROS는 최상의 츄러스를 위해</p>
+            <p>항상 최선을 다해 반죽하고 튀겨냅니다.</p>
+            <p>AOMG멤버들이 모두 방문하는 순간까지 </p>
+            <p>저희 LOKOCHURROS의 메뉴개발은 계속될 것입니다.</p>
+    </div>
+    <div class="info">
+        <p> Adress. 세종특별자치시 조치원읍 **길 **</p>
+        <p> Number. 010-****-****</p>
+        <p> COPYRIGHT. © LOKOCHU. ALL RIGHTS RESERVED.</p>
     </div>
 </body>
 </html>
